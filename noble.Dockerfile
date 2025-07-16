@@ -19,4 +19,5 @@ RUN chmod -R +x /rocker_scripts/ \
     && /rocker_scripts/install_openac.sh
 
 EXPOSE 8787
+ENTRYPOINT ["/rocker_scripts/entrypoint.sh"]
 CMD ["/init"]

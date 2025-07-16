@@ -6,7 +6,7 @@ It is built on top of the [jmgirard/rstudio2u](https://github.com/jmgirard/rstud
 
 | Tag    | Base Image         | Operating System         | R ver | CUDA ver | AW ver |
 |--------|--------------------|--------------------------|-------|----------|--------|
-| latest | jmgirard/rstudio2u | Ubuntu 24.04 LTS (noble) | 4.4.3 | 12.8     | 0.4.1  |
+| noble  | jmgirard/rstudio2u | Ubuntu 24.04 LTS (noble) | 4.5.1 | 12.9     | 0.4.2  |
 
 ## Usage
 1. Verify that your machine's graphics card supports CUDA: <https://developer.nvidia.com/cuda-gpus>

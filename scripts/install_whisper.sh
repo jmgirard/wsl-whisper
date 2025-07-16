@@ -3,9 +3,19 @@
 
 set -e
 
-AW_VERSION=${1:-${AW_VERSION}}
+echo "Checking for audio.whisper installation..."
 
-# Install audio.whisper
-R -q -e '    
-    remotes::install_github("bnosac/audio.whisper", ref="'${AW_VERSION}'")
-'
+Rscript - <<EOF
+pkg <- "audio.whisper"
+
+is_installed <- requireNamespace(pkg, quietly = TRUE)
+
+if (is_installed) {
+    message(pkg, " version ", ver, " is already installed. Skipping.")
+    quit(status = 0)
+} else {
+  message(pkg, " is not installed. Proceeding with installation.")
+}
+
+pak::pak("bnosac/audio.whisper")
+EOF
