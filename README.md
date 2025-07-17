@@ -13,7 +13,7 @@ It is built on top of the [jmgirard/rstudio2u](https://github.com/jmgirard/rstud
 2. On Windows, install the latest game-ready driver from NVIDIA: <https://www.nvidia.com/Download/index.aspx#>
 3. On Windows, install the latest version of Docker Desktop: <https://www.docker.com/products/docker-desktop/>
 4. Open Docker Desktop and click the Terminal button on the bottom of the screen
-5. In the Terminal, type `docker pull jmgirard/wsl-whisper` 
+5. In the Terminal, type `docker pull jmgirard/wsl-whisper` or `docker pull ghcr.io/jmgirard/wsl-whisper`
 6. In the Terminal, type `docker run --gpus all -it -e PASSWORD=pass -p 8787:8787 jmgirard/wsl-whisper`
 7. In Docker Desktop, click the Containers tab on the left and click the "8787:8787" link
 8. Your browser should show a login page, enter "rstudio" as the username and "pass" for the password
